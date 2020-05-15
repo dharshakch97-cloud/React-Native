@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  background-color: #30E3CA;
+}
+
+h1 {
+  text-align: center;
+}
+
+.start-game {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.start-game h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  color: #40514E;
+}
+
+.start-game input,
+.start-game button {
+  font-family: 'Poppins';
+}
+
+.start-game input {
+  color: #40514E;
+  display: block;
+  padding: 10px 40px;
+  margin: 20px auto;
+  border: none;
+  font-size: 16px;
+}
+
+.start-game input:focus {
+  outline: none;
+}
+
+.start-game button {
+  border: none;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #2F89FC;
+  color: white;
+}
+
+.start-game button:hover {
+  background: #2268c4;
+  cursor: pointer;
+}
+
+.board-game {
+  display: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.board-game h1 {
+  color: #40514E;
+}
+
+.board-game .player-detail {
+  color: #40514E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.board-game .player-detail div {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.board-game .player-detail div img {
+  margin-left: 10px;
+}
+
+.board-game .board {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+}
+
+.board-game .board .box {
+  background: #F5F5F5;
+  border: 1px solid #C2C2C2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle-white {
+  font-size: 40px;
+}
+
+.cross-white {
+  font-size: 50px;
+}
+
+.validation {
+  color: #d42c2c;
+}
+
+.symbols {
+  width: 50px;
+}
+
+.winner {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  width: 500px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  text-align: center;
+}
+
+.winner p {
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.btn {
+  padding: 10px 40px;
+  border: none;
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: #40514E;
+}
+
+.btn:hover {
+  background: #30E3CA;
+  color: #40514E;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

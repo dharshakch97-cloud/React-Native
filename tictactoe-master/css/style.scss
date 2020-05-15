@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-color: #30E3CA;
+}
+
+h1 {
+    text-align: center;
+}
+
+.start-game {
+    display: block;
+
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        font-size: 50px;
+        margin-top: 50px;
+        color: #40514E;
+
+    }
+
+    input,
+    button {
+        font-family: 'Poppins';
+    }
+
+    input {
+        color: #40514E;
+        display: block;
+        padding: 10px 40px;
+        margin: 20px auto;
+        border: none;
+        font-size: 16px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    button {
+        border: none;
+        padding: 15px 40px;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #2F89FC;
+        color: white;
+    }
+
+    button:hover {
+        background: rgb(34, 104, 196);
+        cursor: pointer;
+    }
+}
+
+.board-game {
+    display: none;
+    user-select: none;
+
+    h1 {
+        color: #40514E;
+    }
+
+    .player-detail {
+        color: #40514E;
+        display: flex;
+        justify-content: space-evenly;
+
+        div {
+            font-size: 20px;
+            display: flex;
+
+            img {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 300px;
+        height: 300px;
+        margin: 40px auto;
+
+        .box {
+            background: #F5F5F5;
+            border: 1px solid #C2C2C2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.circle-white {
+    font-size: 40px;
+}
+
+.cross-white {
+    font-size: 50px;
+}
+
+.validation {
+    color: rgb(212, 44, 44);
+}
+
+.symbols {
+    width: 50px;
+}
+
+.winner {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 500px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
+    text-align: center;
+
+    p {
+        font-size: 40px;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba($color: #000000, $alpha: 0.4);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.btn {
+    padding: 10px 40px;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #40514E;
+}
+
+.btn:hover {
+    background: #30E3CA;
+    color: #40514E;
+    cursor: pointer;
+}
