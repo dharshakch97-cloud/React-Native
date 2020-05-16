@@ -1,2 +1,2 @@
 # React-Native
-Web applications using React native
+Mobile applications using React native
